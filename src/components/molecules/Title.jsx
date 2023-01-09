@@ -9,14 +9,20 @@ const FormatedTitle = styled(Text)`
   font-size: ${(props) => props.fontSize};
 `
 
-function Title({ children, type = 'h1', color = colors.font.headings }) {
+function Title({
+  children,
+  type = 'h1',
+  color = colors.font.headings,
+  fontWeight,
+  fontSize,
+}) {
   // eslint-disable-next-line dot-notation
   return (
     <FormatedTitle
       as={type}
       color={color}
-      fontWeight={weight[type]}
-      fontSize={dimensions.font[type]}
+      fontWeight={fontWeight ?? weight[type]}
+      fontSize={fontSize ?? dimensions.font[type]}
     >
       {children}
     </FormatedTitle>
@@ -27,6 +33,8 @@ Title.propTypes = {
   children: PropTypes.string.isRequired,
   type: PropTypes.string,
   color: PropTypes.string,
+  fontWeight: PropTypes.string,
+  fontSize: PropTypes.string,
 }
 
 export default Title

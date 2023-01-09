@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { FlexBox } from '../../styles'
+import { Text } from '../atoms'
 
 const HeaderStyled = styled(FlexBox)`
   padding-left: 2rem;
@@ -10,14 +11,12 @@ const HeaderStyled = styled(FlexBox)`
 function Header() {
   return (
     <HeaderStyled direction="row" justify="space-between">
-      <div>MIPISO.com</div>
-      <div>
-        <ul>
-          <li>Buscador</li>
-          <li>Datos</li>
-          <li>Mi Perfil</li>
-        </ul>
-      </div>
+      <Text>MIPISO.com</Text>
+      <FlexBox direction="row" gap="1rem">
+        <Text>Buscador</Text>
+        <Text>Datos</Text>
+        <Text>Mi Perfil</Text>
+      </FlexBox>
     </HeaderStyled>
   )
 }

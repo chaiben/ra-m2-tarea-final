@@ -5,6 +5,7 @@ const FlexBox = styled.div`
   align-items: ${({ align }) => align || 'stretch'};
   justify-content: ${({ justify }) => justify || 'flex-start'};
   flex-direction: ${({ direction }) => direction || 'column'};
+  gap: ${({ gap }) => gap || '0'};
 `
 
 export default FlexBox
