@@ -2,19 +2,16 @@ import PropTypes from 'prop-types'
 import Header from './Header'
 import SubHeader from './SubHeader'
 import { FlexBox } from '../../styles'
+import { Outlet } from 'react-router-dom'
 
-function Body({ children }) {
+function Body() {
   return (
     <FlexBox>
       <Header />
       <SubHeader />
-      {children}
+      <Outlet />
     </FlexBox>
   )
-}
-
-Body.propTypes = {
-  children: PropTypes.node.isRequired,
 }
 
 export default Body

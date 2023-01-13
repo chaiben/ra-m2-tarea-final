@@ -1,12 +1,7 @@
-import { Body } from './components/layout'
-import Main from './pages/Main'
+import { AppRoutes } from './router/AppRoutes'
 
 function App() {
-  return (
-    <Body>
-      <Main />
-    </Body>
-  )
+  return <AppRoutes />
 }
 
 export default App
