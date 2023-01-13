@@ -18,5 +18,5 @@ export default function Houses({ list, selected = '' }) {
 
 Houses.propTypes = {
   list: PropTypes.array.isRequired,
-  selected: PropTypes.number,
+  selected: PropTypes.string,
 }
