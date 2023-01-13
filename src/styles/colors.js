@@ -1,11 +1,14 @@
 const colors = {
-  main: '#FF0000',
-  secondary: '#0088CC',
-  tertiary: 'lightblue',
+  main: '#4480E2',
+  mainLight: '#3FB9F6',
+  secondary: '#8077A3',
+  tertiary: '#E7F1F0',
+  white: '#FFFFFF',
   font: {
-    base: '#444',
-    headings: '#121212',
-  },
+    base: '#17090A',
+    headings: '#362239',
+    logo: '#863B3B'
+  }
 }
 
 export default colors

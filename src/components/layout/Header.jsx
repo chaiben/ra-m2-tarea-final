@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { FlexBox } from '../../styles'
+import { colors, FlexBox } from '../../styles'
 import { Text } from '../atoms'
 
 const HeaderStyled = styled(FlexBox)`
@@ -11,7 +11,7 @@ const HeaderStyled = styled(FlexBox)`
 function Header() {
   return (
     <HeaderStyled direction="row" justify="space-between">
-      <Text>MIPISO.com</Text>
+      <Text color={colors.font.logo}>MIPISO.com</Text>
       <FlexBox direction="row" gap="1rem">
         <Text>Buscador</Text>
         <Text>Datos</Text>

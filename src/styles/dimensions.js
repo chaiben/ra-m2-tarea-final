@@ -14,6 +14,10 @@ const dimensions = {
     h5: '16px',
     h6: '16px',
   },
+  card: {
+    width: '13rem',
+    height: '13rem'
+  }
 }
 
 export default dimensions
